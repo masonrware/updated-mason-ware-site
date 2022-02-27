@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type='text/css' href="static/style.css">
+    <script src='../index.js'></script>
+    <title>Mason Ware</title>
+</head>
+<body>
+<header>
+   <h1 style='text-align:center; padding-top: 7.5%; font-size:70px'>Mason Ware</h1>
+   <nav>
+        <ul class="nav">
+            <li class='nav-item'>
+                <a href="{{ url_for('about') }}" class="nav-link" data-bs-toggle="tab" >About</a>
+            </li>
+            <li class='nav-item'>
+                <a href="{{ url_for('home') }}" class="nav-link" data-bs-toggle="tab" >Home</a>
+            </li>
+            <li class='nav-item'>
+                <a href="{{ url_for('portfolio') }}" class="nav-link" data-bs-toggle="tab" >Portfolio</a>
+            </li>
+            <li class='nav-item'>
+                <a href="{{ url_for('resources') }}" class="nav-link" data-bs-toggle="tab">Resources</a>
+            </li>
+            <li class='nav-item'>
+                <a href="{{ url_for('resume') }}" class="nav-link" data-bs-toggle="tab" >Resume</a>
+            </li>
+        </ul>
+        <div class="social-links" style="text-align: center; padding-top: 7.5px">
+            <a class="social-links__anchor" href="https://www.linkedin.com/in/mason-ware-00a737146/" target='_block'>
+              <img class="social-links__image" src="../static/resources/images/socials/linkedin.svg" alt="Linkedin logo" width="20" height="20">
+            </a>
+            <a href="https://github.com/masonrware" target='_block'>
+              <img class="social-links__image" src="../static/resources/images/socials/github.svg" alt="Github logo" width="20" height="20">
+            </a>
+            <a class="social-links__anchor" href="">
+              <img class="social-links__image" src="../static/resources/images/socials/instagram.svg" alt="Instagram logo" width="20" height="20">
+            </a>
+        </div>
+   </nav>
+</header>
+<main style='padding: 10% 15%'>
+    <strong><h1 style='font-size: 50px;'>About</h1></strong>
+    <h3 style='color: #7b8ab8; padding-top: 0%;'><small>Who is this guy?</small></h3>
+    <p style='padding-top: 10%'>Hi everyone, my name is Mason. I am currently an undergraduate student at Brandeis Univeristy studying Computer Science
+    and Applied Mathematics. I became interested in Computer Science because of Game Development, and while I am no longer pursuing such a career, I am still
+    an avid gamer. Here is a video made by my favorite youtuber (videogamedunkey) about a game made by my favorite game developer (toby fox): </p><br>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QtplRk6BdyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <br><p>I grew up in Los Angeles, California as the elder child in a single-parent-household. My fascination with computers started at a very young age.
+        I think it really started with Legos, but the first time I picked up a soldering iron in my middle school STEM class, I knew I had found something
+        I connected with. My official relationship with Computer Science started when I took a CS class in high school. Learning Java and doing problem sets
+        started me down a path that I am still walking. Since my admittance to Brandeis, I have stratified my CS interests, branching into fields like systems
+        programming and learning complimentary languages like Rust and C++. 
+    </p>
+    <br><p>Currently, I am working to become a black-belt in Python development and bolster my skills in relevant CS areas. Reading programming books, taking
+        CS courses, and gaining internship experience are all ways in which I am striving to do so. My last oppurtunity, at Cleeng, was informative and worthwhile
+        as it strengthened my web-development skills greatly. My next oppurtunity I hope will be in the fields of networking and cloud programming. Overall, getting
+        'cracked' at  python, rust, and C++ is my most realistic next step and I hope to make it the first of many in a comprehensive and successful career.
+    </p>
+    <br><p>Contact: masonware15@gmail.com</p>
+</main>
+</body>
+<footer>
+    <div style="text-align: left; bottom: 0; width: 100%; padding: 10px 5px">
+        <div class="fixed-content-footer__copy">
+        <p class="footer-copy__name" style='padding-left: 5%;'>©2022  Mason Ware</p>
+    </div>
+</footer>
+</html>
