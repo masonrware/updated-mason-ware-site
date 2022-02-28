@@ -17,12 +17,12 @@ class BackEndApplication:
     @app.route('/')
     def landing_page():
         """root landing page"""
-        return render_template('home.html')
+        return render_template('index.html')
 
     @app.route("/home/")
     def home():
         """home page"""
-        return render_template("home.html")
+        return render_template("index.html")
 
     @app.route('/about/')
     def about():
