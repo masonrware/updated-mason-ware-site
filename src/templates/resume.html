@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type='text/css' href="static/style.css">
-    <script src='../index.js'></script>
-    <title>Mason Ware</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" type='text/css' href="static/style.css">
+   <script src='../index.js'></script>
+   <title>Mason Ware</title>
 </head>
 <body>
 <header>
-   <h1 style='text-align:center; padding-top: 7.5%; font-size:70px'>Mason Ware</h1>
-   <nav>
-        <ul class="nav">
-            <li class='nav-item'>
-                <a href="{{ url_for('about') }}" class="nav-link" data-bs-toggle="tab" >About</a>
-            </li>
-            <li class='nav-item'>
-                <a href="{{ url_for('home') }}" class="nav-link" data-bs-toggle="tab" >Home</a>
-            </li>
-            <li class='nav-item'>
-                <a href="{{ url_for('portfolio') }}" class="nav-link" data-bs-toggle="tab" >Portfolio</a>
-            </li>
-            <li class='nav-item'>
-                <a href="{{ url_for('resources') }}" class="nav-link" data-bs-toggle="tab">Resources</a>
-            </li>
-            <li class='nav-item'>
-                <a href="{{ url_for('resume') }}" class="nav-link" data-bs-toggle="tab" >Resume</a>
-            </li>
-        </ul>
-        <div class="social-links" style="text-align: center; padding-top: 7.5px">
-            <a class="social-links__anchor" href="https://www.linkedin.com/in/mason-ware-00a737146/" target='_block'>
-              <img class="social-links__image" src="../static/resources/images/socials/linkedin.svg" alt="Linkedin logo" width="20" height="20">
-            </a>
-            <a href="https://github.com/masonrware" target='_block'>
-              <img class="social-links__image" src="../static/resources/images/socials/github.svg" alt="Github logo" width="20" height="20">
-            </a>
-            <a class="social-links__anchor" href="">
-              <img class="social-links__image" src="../static/resources/images/socials/instagram.svg" alt="Instagram logo" width="20" height="20">
-            </a>
-        </div>
-   </nav>
+  <h1 style='text-align:center; padding-top: 7.5%; font-size:70px'>Mason Ware</h1>
+  <nav>
+       <ul class="nav">
+           <li class='nav-item'>
+               <a href="{{ url_for('about') }}" class="nav-link" data-bs-toggle="tab" >About</a>
+           </li>
+           <li class='nav-item'>
+               <a href="{{ url_for('home') }}" class="nav-link" data-bs-toggle="tab" >Home</a>
+           </li>
+           <li class='nav-item'>
+               <a href="{{ url_for('portfolio') }}" class="nav-link" data-bs-toggle="tab" >Portfolio</a>
+           </li>
+           <li class='nav-item'>
+               <a href="{{ url_for('resources') }}" class="nav-link" data-bs-toggle="tab">Resources</a>
+           </li>
+           <li class='nav-item'>
+               <a href="{{ url_for('resume') }}" class="nav-link" data-bs-toggle="tab" >Resume</a>
+           </li>
+       </ul>
+       <div class="social-links" style="text-align: center; padding-top: 7.5px">
+           <a class="social-links__anchor" href="https://www.linkedin.com/in/mason-ware-00a737146/" target='_block'>
+             <img class="social-links__image" src="../static/resources/images/socials/linkedin.svg" alt="Linkedin logo" width="22.5" height="22.5">
+           </a>
+           <a href="https://github.com/masonrware" target='_block'>
+             <img class="social-links__image" src="../static/resources/images/socials/github.svg" alt="Github logo" width="22.5" height="22.5">
+           </a>
+           <a class="social-links__anchor" href="" target="_block">
+             <img class="social-links__image" src="../static/resources/images/socials/instagram.svg" alt="Instagram logo" width="22.5" height="22.5">
+           </a>
+       </div>
+  </nav>
 </header>
-<main style='padding: 5% 3%'>
-    <h2>Resume</h2>
-    <a src="https://docs.google.com/document/d/1HNJ2l7nWEmkQyoHL1F1IaYi1CH2S5IGBPUoFZ0ZZ8YQ/export?format=pdf">download resume</a>
+<main style='padding: 10% 15%'>
+   <strong><h1 style='font-size: 50px;'>Resume</h1></strong>
+   <h3 style='color: #7b8ab8; padding-bottom: 10%;'><small>Take a look at my credentials and download a copy <a href='https://docs.google.com/document/d/1HNJ2l7nWEmkQyoHL1F1IaYi1CH2S5IGBPUoFZ0ZZ8YQ/export?format=pdf'>here</a>.</small></h3>
+   <div style='border:2.5px solid black; width:60%; height:70%; justify-content: center; margin-left:20%' >
+      
+ 
+       <img style='padding: 4px; width:100%; height:100%' src='../static/resources/images/resume.png'>
+ 
+       <!-- <embed style='padding: 4px; overflow: visible;' src='../static/resources/resume.pdf' width='100%' height="100%"> -->
+   </div>
 </main>
 </body>
 <footer>
-    <div style="text-align: left; bottom: 0; width: 100%; padding: 10px 5px">
-        <div class="fixed-content-footer__copy">
-        <p class="footer-copy__name">©2022  Mason Ware</p>
-    </div>
+   <div style="text-align: left; bottom: 0; width: 100%; padding: 10px 5px">
+       <div class="fixed-content-footer__copy">
+       <p class="footer-copy__name" style='padding-left: 5%;'>©2022  Mason Ware</p>
+   </div>
 </footer>
 </html>
