@@ -7,10 +7,10 @@
 import argparse
 
 from flask import Flask, render_template, request
-from flask_frozen import Freezer
 
 app = Flask(__name__)
-freezer = Freezer(app)
+
+##this is an update to test deploy
 
 class BackEndApplication:
     """Class for the base back end app of the site in Flask"""
@@ -64,4 +64,4 @@ if __name__ == "__main__":
     if args.debug:
         app.run(debug=True, port=5000)
     if args.run:
-        freezer.freeze()
+        app.run(debug=False, port=5000)

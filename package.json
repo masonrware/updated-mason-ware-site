@@ -1,0 +1,19 @@
+{
+  "name": "updated-mason-ware-site",
+  "version": "1.0.0",
+  "description": "this is the codebase for my updated website",
+  "main": "flask_app.py",
+  "scripts": {
+    "test": "python3 flask_app.py --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonrware/updated-mason-ware-site.git"
+  },
+  "author": "Mason R. Ware",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masonrware/updated-mason-ware-site/issues"
+  },
+  "homepage": "https://github.com/masonrware/updated-mason-ware-site#readme"
+}
