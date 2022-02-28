@@ -7,8 +7,10 @@
 import argparse
 
 from flask import Flask, render_template, request
+from flask_frozen import Freezer
 
 app = Flask(__name__)
+freezer = Freezer(app)
 
 class BackEndApplication:
     """Class for the base back end app of the site in Flask"""
@@ -17,32 +19,37 @@ class BackEndApplication:
         """root landing page"""
         return render_template('home.html')
 
-    @app.route("/home")
+    @app.route("/home/")
     def home():
         """home page"""
         return render_template("home.html")
 
-    @app.route('/about')
+    @app.route('/about/')
     def about():
         """about page"""
         return render_template("about.html")
 
-    @app.route('/portfolio')
+    @app.route('/portfolio/')
     def portfolio():
         """portfolio page"""
         return render_template("portfolio.html")
 
-    @app.route('/resources')
+    @app.route('/resources/')
     def resources():
         """resources page"""
         return render_template("resources.html")
 
-    @app.route('/resume')
+    @app.route('/resume/')
     def resume():
         """resume page"""
         return render_template("resume.html")
 
-
+    @app.route('/update_server/', methods=['POST'])
+    def webhook():
+        if request.method == 'POST':
+            repo = git.Repo('path/to/git_repo')
+            origin = repo.remotes.origin
+            origin.pull()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Boolean IR system")
@@ -57,4 +64,4 @@ if __name__ == "__main__":
     if args.debug:
         app.run(debug=True, port=5000)
     if args.run:
-        app.run(debug=False, port=5000)
+        freezer.freeze()
