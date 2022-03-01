@@ -2,9 +2,9 @@
   "name": "updated-mason-ware-site",
   "version": "1.0.0",
   "description": "this is the codebase for my updated website",
-  "main": "flask_app.py",
+  "main": "app.py",
   "scripts": {
-    "test": "python3 flask_app.py --debug"
+    "test": "python3 app.py --debug"
   },
   "repository": {
     "type": "git",
